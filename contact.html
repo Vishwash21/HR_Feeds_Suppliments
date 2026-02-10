@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Contact Us | HR Feeds & Supplements</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="header">
+  <div class="logo">
+    <img src="images/Logo copy.png" alt="HR Feeds">
+    <span>HR FEEDS & SUPPLEMENTS</span>
+  </div>
+
+  <!-- Hamburger -->
+  <div class="menu-toggle" onclick="toggleMenu()">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+  <nav id="navMenu">
+    <a href="index.html">Home</a>
+    <a href="product.html">Products</a>
+    <a href="about.html">About</a>
+    <a href="contact.html" class="active">Contact</a>
+  </nav>
+</header>
+
+
+<section class="contact-hero">
+  <div class="contact-section">
+    <h2>Enquiry Form</h2>
+    <p>Fill the form below and we’ll get back to you shortly.</p>
+
+    <form action="https://formspree.io/f/xoqggzjr" method="POST" class="contact-form">
+
+      <input type="text" name="name" placeholder="Your Name" required>
+      <input type="email" name="email" placeholder="Your Email" required>
+      <input type="tel" name="phone" placeholder="Phone Number" required>
+
+      <textarea name="message" placeholder="Your Enquiry" rows="5" required></textarea>
+
+      <input type="hidden" name="_replyto" value="hrfsupplements2021@gmail.com">
+
+      <button type="submit" class="btn">Submit Enquiry</button>
+    </form>
+  </div>
+</section>
+
+
+</body>
+</html>
